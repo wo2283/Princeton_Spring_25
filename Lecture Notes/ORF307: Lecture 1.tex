@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{titlesec}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Course Name}}  % Change this to your course
+\fancyhead[C]{\textbf{Lecture Notes}}
+\fancyhead[R]{\textbf{\thepage}}
+
+% Theorem & Definition Formatting
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+
+% Custom Highlight Box
+\newtcolorbox{summarybox}{colback=blue!5!white, colframe=blue!50!black, 
+boxrule=0.8pt, arc=5pt, left=5pt, right=5pt, top=5pt, bottom=5pt}
+
+% Title
+\title{\textbf{ORF307: Optimization \\ Lecture Notes}}
+\author{William Oh}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents % Generates an automatic table of contents
+
+% --- Lecture 1 ---
+\chapter{Lecture 1: Introduction to Topic}
+\section{Key Concepts}
+\begin{definition}
+    A \textbf{set} is a collection of distinct objects, considered as an object in its own right.
+\end{definition}
+
+\begin{theorem}[Pythagorean Theorem]
+    In a right-angled triangle:
+    \[
+    a^2 + b^2 = c^2
+    \]
+\end{theorem}
+
+% --- Lecture 2 ---
+\chapter{Lecture 2: Advanced Concepts}
+\section{Important Theorems}
+\begin{summarybox}
+    The derivative of \( f(x) = x^n \) is:
+    \[
+    \frac{d}{dx} x^n = n x^{n-1}
+    \]
+\end{summarybox}
+
+\section{Examples}
+\begin{itemize}
+    \item Compute \( \int x^2 dx \).
+    \item Find the eigenvalues of \( A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix} \).
+\end{itemize}
+
+\end{document}
